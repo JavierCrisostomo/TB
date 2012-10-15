@@ -1,4 +1,4 @@
-ENV['RACK_ENV'] ||= 'production' if `hostname` == "rkh.im\n"
+ENV['RACK_ENV'] ||= 'production' if `hostname` == "tb\n"
 %w[sinatra slim sass rdiscount yaml date compass].each { |l| require(l) }
 
 Compass.configuration do |config|
@@ -36,6 +36,5 @@ end
 before { @title, @articles = "My Humble Blog", articles }
 
 get('/') { slim :index }
-get('/feed.xml') { builder :feed }
 get('/style.css') { sass :style }
 get('/:year/:month/:slug') { redirect to("/#{params[:slug]}") }
