@@ -32,7 +32,8 @@ GEM
       fssm (>= 0.2.7)
       sass (~> 3.1)
     daemons (1.1.4)
-    eventmachine (0.12.10)
+    eventmachine (1.0.0)
+    eventmachine (1.0.0-x86-mingw32)
     execjs (1.2.0)
       multi_json (~> 1.0)
     fssm (0.2.7)
@@ -47,9 +48,14 @@ GEM
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
+    thin (1.2.11-x86-mingw32)
+      daemons (>= 1.0.9)
+      eventmachine (>= 0.12.6)
+      rack (>= 1.0.0)
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   builder
