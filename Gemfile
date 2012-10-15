@@ -1,13 +1,4 @@
-source :rubygems
+source :rubygems unless ENV['QUICK']
 
-gem 'sinatra'
-gem 'dm-core'
-gem 'dm-migrations'
-
-group :development do
-  gem 'dm-sqlite-adapter'
-end
-
-group :production do 
-  gem 'dm-postgres-adapter'
-end
+%w[tilt sinatra rack].each { |d| gem(d, :git => "git://github.com/rkh/#{d}.git") }
+%w[slim sass rdiscount compass coffee-script thin builder].each { |d| gem(d) }
