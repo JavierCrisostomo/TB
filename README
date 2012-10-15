@@ -13,14 +13,14 @@ $ foreman start
 Abrir una ventana del navegador y ir a :
 	http://localhost:5000
 
-Para Deploy en heroku
+Para Deploy en Heroku
 
-$heroku create blog
-$git heroku push master
+$ heroku create blog
+$ git push heroku master
 
 Nota:
 Si al momento de ejecutar el comando anterior muestra el siguiente mensaje de error:
 C:/Program Files (x86)/RailsInstaller/Ruby1.9.3/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb:36:in 'require': cannot load such file -- thin (LoadError)
-Instalar thin pero con los siguientes parámetros:
+Instalar thin pero con los siguientes parï¿½metros:
 
 $ gem install thin -v 1.2.11
