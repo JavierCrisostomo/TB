@@ -21,13 +21,13 @@ html lang="en"
   body
     aside.info
       section.me
-        h1 about me
+        h1 Acerca de...
         h3
           img src='/me.png' width='40px' height='40px' alt='sinatra'
           | Javier Crisostomo
         p Senior Developer at Terremark
       section.articles
-        h1 Posts
+        h1 Mis Posts
         - @articles.each do |slug, title, date|
           h3
             a href=slug = title
@@ -52,7 +52,7 @@ html lang="en"
           a href="http://rubini.us/" Rubinius
         p An environment for the Ruby programming language
       section.link
-        h1 me on the web
+        h1 GitHub
         h3 <a href="http://github.com/javiercrisostomo" rel="me">GitHub</a>
         p Mis Proyectos
     section.page
